@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="login.css">
     <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="container">
@@ -75,7 +75,6 @@
 
                     <div class="input-field button">
                         <input type="submit" name="submit-regis" value="Daftar">
-                        <!-- <input type="button" value="Daftar"> -->
                     </div>
                 </form>
 
@@ -97,11 +96,8 @@
     require 'config.php';
 
     if (isset($_POST["submit-regis"]) ){
-        if (register($_POST) > 0){
-            echo "<script> alert('Registrasi Berhasil!'); </script>";
-        } else {
-            echo "<script> alert('Registrasi gagal!'); </script>";
-        }
+        if (register($_POST) > 0) echo "<script> alert('Registration Success.'); </script>";
+        else echo "<script> alert('Registration Failed.'); </script>";
     };
 
     if (isset($_COOKIE["id"]) && isset($_COOKIE["key"])){
