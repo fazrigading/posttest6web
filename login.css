@@ -169,13 +169,13 @@ body{
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #2d4bb5;
+    background-color: #1c3388;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .button input:hover{
-    background-color: #13235b;
+    background-color: #304bad;
 }
 
 .form .login-signup{
