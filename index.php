@@ -9,12 +9,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation Game Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="images/logo.png" class="logo">
+            <img src="assets/logo.png" class="logo">
             <h1>Playstation Game Store</h1>
             <nav>
                 <ul id="menuList">
@@ -39,26 +40,26 @@
                 <h3>Stick PS Tanpa Kabel untuk Playstation 4</h3>
                 <p>(Kompatibel/Original)</p>
                 <h4>Rp500.000</h4>
-                <button type="button" id="buynow">Beli Sekarang<img src="images/arrow.png"></button>
+                <button type="button" id="buynow">Beli Sekarang<img src="assets/arrow.png"></button>
             </div>
             <div class="col-2">
-                <img src="images/controller.png" class="controller">
+                <img src="assets/controller.png" class="controller">
                 <div class="color-box"></div>
                 <div class="add-btn" id="addCart">
-                    <img src="images/add.png">
+                    <img src="assets/add.png">
                     <p><small>Add to Cart</small></p>
                 </div>
             </div>
         </div>
         <div class="social-links">
             <a href="https://www.facebook.com/fazrigading">
-                <img src="images/fb.png">
+                <img src="assets/fb.png">
             </a>
             <a href="https://twitter.com/fazrigading">
-                <img src="images/tw.png">
+                <img src="assets/tw.png">
             </a>
             <a href="https://instagram.com/fazrigading">
-                <img src="images/ig.png">
+                <img src="assets/ig.png">
             </a>
         </div>
     </div>

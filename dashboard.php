@@ -22,13 +22,12 @@
   <div>
     <a href="logout.php" role="button"> Logout</a>
   </div>
-  <h3>User</h3>
-  <table>
+  <h1>User</h1>
+  <table border="1">
     <tr>
       <th>No</th>
       <th>ID</th>
       <th>Photo</th>
-      <th>Name</th>
       <th>Username</th>
       <th>Password</th>
       <th>Action</th>
@@ -37,17 +36,16 @@
     <tr>
       <td><?= $i ?></td>
       <td><?= $user['id'] ?></td>
-      <td><img src="img/<?= $user["photo"]?>" alt="" width="50px"></td>
-      <td><?= $user['name'] ?></td>
+      <td><img src="img/<?= $user["photo"]?>" alt="" width="256px"></td>
       <td><?= $user['username'] ?></td>
       <td><?= $user['password'] ?></td>
       <td>
         <a href="update.php?id=<?= $user["id"]?>">
-          <i></i>
-        </a> |  
+          <i>Update</i>
+        </a>|
         <a href="delete.php?id=<?= $user["id"]?>" 
-        onclick = "return confirm('Apakah anda ingin menghapus File?')">
-          <i></i>
+          onclick = "return confirm('Apakah anda ingin menghapus File?')">
+          <i>Delete</i>
         </a>
       </td>
     </tr>
