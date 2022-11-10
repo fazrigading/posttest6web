@@ -4,7 +4,7 @@ const modeGelap = document.getElementById("modegelap");
 
 tombolBeli.addEventListener("click",
     function(){
-        alert("Mohon maaf, tombol Beli Sekarang belum dapat digunakan. Situs sedang dalam masa pengembangan.");
+        alert("Mohon maaf, tombol Beli Sekarang belum dapat digunakan. Dapat menekan tombol Catalog untuk melihat produk.");
     },
 )
 tombolKeranjang.addEventListener("click",

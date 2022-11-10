@@ -8,7 +8,8 @@
   $id = $_GET["id"];
   $user = query("SELECT * FROM users WHERE id = $id")[0];
   if (isset($_POST["submitupdate"])) {
-    if (update($_POST) > 0) echo "<script> alert('Data updated succesfully.'); document.location.href = 'dashboard.php'; </script>";
+    if (update($_POST) > 0) 
+      echo "<script> alert('Data updated succesfully.'); document.location.href = 'dashboard.php'; </script>";
     else {
       $feedback = "Data Gagal Diubah";
       echo mysqli_error($db);

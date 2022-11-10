@@ -1,6 +1,8 @@
 <?php 
+    session_start();
     require 'config.php';
     $result = mysqli_query($db, "SELECT * FROM users");
+    echo "<script> alert('Fitur Searching ada di Catalog.'); </script>";
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +23,15 @@
                 <ul id="menuList">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="aboutme.php">About Me</a></li>
-                    <li><a href="">Console</a></li>
-                    <li><a href="">Accessories</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <li><a href="catalog.php">Catalog</a></li>
+                    <?php 
+                    if (!isset($_SESSION['login'])){
+                        echo "<li><a href='login.php'>Login</a></li>";
+                    } else {
+                        echo "<li><a href='dashboard.php'>Dashboard</a></li>";
+                        echo "<li><a href='logout.php'>Logout</a></li>";
+                    } 
+                    ?>
                     <li>
                         <label>
                             <input type="checkbox" class="checkbox" id="modegelap">
